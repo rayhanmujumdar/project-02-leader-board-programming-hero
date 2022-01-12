@@ -10,9 +10,24 @@ common css
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
-.container{
-    width: 940px;
+body{
+    background-color: whitesmoke;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-container{
+    max-width: 870px;
     margin: auto;
+}
+.container{
+    max-width: 870px;
+    margin: auto;
+    padding: 30px;
+    background-color: #ffffff;
 }
 img{
     max-width: 100%;
@@ -20,11 +35,11 @@ img{
 h3{
     font-weight: 600;
 }
-/* hr{
-    width: 940px;
+hr{
+    max-width: 1140px;
     margin: auto;
-    color: gray;
-} */
+    color: lightgray;
+}
 /* =======================
 nav-menu start from here
 ========================== */
@@ -45,6 +60,7 @@ nav-menu start from here
     flex: 3;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
 .menu img{
     width: 51px;
@@ -60,6 +76,7 @@ nav-menu start from here
 }
 .menu ul li a{
     color: white;
+    position: relative;
 }
 .logo{
     display: flex;
@@ -91,6 +108,7 @@ top player section 01 start from here
     grid-template-columns: repeat(3,1fr);
     grid-gap: 0px 100px;
     /* justify-items: start; */
+    
 }
 .player{
     display: flex;
@@ -109,7 +127,6 @@ top blogs section 01 start from here
 =================================*/
 .blogs-section{
     width: 100%;
-    margin-top: 40px;
 }
 .blog img{
     width: 177px;
@@ -117,8 +134,8 @@ top blogs section 01 start from here
 .blogs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap: 0 200px;
-    justify-items: start;
+    /* grid-gap: 0 200px; 
+     justify-items: start; */
 }
 .blog{
     display: flex;
@@ -128,7 +145,7 @@ top blogs section 01 start from here
 .blog-content{
     margin-left: 20px;
 }
-.blog-content span{
+.blog-content a{
     color: #562EFF;
 }
 /* ==============================
