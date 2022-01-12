@@ -17,26 +17,80 @@ common css
 img{
     max-width: 100%;
 }
-hr{
+h3{
+    font-weight: 600;
+}
+/* hr{
     width: 940px;
     margin: auto;
     color: gray;
-}
-/* header section 01 start from here */
-.player-section{
+} */
+/* =======================
+nav-menu start from here
+========================== */
+.nav-items{
     width: 100%;
+    background-color: #562EFF;
 }
-.player-section h1{
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0;
+}
+.logo{
+    flex: 1;
+}
+.menu{
+    display: flex;
+    flex: 3;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu img{
+    width: 51px;
+    height: 51px;
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    padding: 0 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.menu ul li a{
+    color: white;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40px;
+}
+.logo p{
+    margin-left: 7px;
+    color: white;
+}
+.player-section h1,.blogs-section h1,.course-section h1{
     margin: 20px 0;
     font-weight: 700;
     color: #562EFF;
 }
-.player-section h1:hover{
+.player-section h1:hover,.blogs-section h1:hover,.course-section h1:hover,a:hover{
     text-decoration: underline;
+}
+/* ==============================
+top player section 01 start from here
+=================================*/
+.player-section{
+    width: 100%;
 }
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-gap: 0px 100px;
+    /* justify-items: start; */
 }
 .player{
     display: flex;
@@ -49,4 +103,71 @@ hr{
 .player h3{
     padding-left: 17px;
     font-weight: 600;
+}
+/* ==============================
+top blogs section 01 start from here
+=================================*/
+.blogs-section{
+    width: 100%;
+    margin-top: 40px;
+}
+.blog img{
+    width: 177px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0 200px;
+    justify-items: start;
+}
+.blog{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+.blog-content{
+    margin-left: 20px;
+}
+.blog-content span{
+    color: #562EFF;
+}
+/* ==============================
+course section 01 start from here
+=================================*/
+.course-section{
+    width: 100%;
+    margin-bottom: 40px;
+}
+.all-course{
+    display: flex;
+    justify-content: space-between;
+}
+.course .mini-title{
+    color: #ED6B4F;
+    padding:4px 0;
+}
+.course img{
+    width: 224px;
+}
+.course p{
+    color: gray;
+}
+.rating{
+    display: flex;
+    justify-content: space-between;
+}
+.star img{
+    width: 20px;
+}
+.times{
+    display: flex;
+    align-items: center;
+}
+.times img{
+    width: 25px;
+}
+.times p{
+    font-weight: 500;
+    margin-left: 5px;
+    color: #ED6B4F;
 }
