@@ -1,0 +1,52 @@
+/* mobile responsive */
+@media (min-width:320px) and (max-width: 600px){
+    .container{
+        padding: 0 20px;
+    }
+    .menu ul li {
+        padding: 0 10px;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    .players{
+        grid-template-columns: 1fr;
+    }
+    .blogs{
+        grid-template-columns: 1fr;
+    }
+    .blog{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .blog-content {
+        margin-left: 0;
+    }
+    .all-course{
+        flex-direction: column;
+    }
+    .course{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .rating {
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container{
+        padding: 0 20px;
+    }
+    .all-course{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        flex-direction: column;
+    }
+    .course{
+        margin-bottom: 20px;
+    }
+    .rating{
+        flex-direction: column;
+        display: inline-block;
+    }
+  }

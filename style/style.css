@@ -106,7 +106,6 @@ top player section 01 start from here
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 0px 100px;
     /* justify-items: start; */
     
 }
@@ -179,6 +178,9 @@ course section 01 start from here
 .times{
     display: flex;
     align-items: center;
+    padding: 3px 3px;
+    border-radius: 50px;
+    background-color: #f5c4b9;
 }
 .times img{
     width: 25px;
